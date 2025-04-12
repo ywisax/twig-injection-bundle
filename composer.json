@@ -19,6 +19,12 @@
         "symfony/event-dispatcher" : "^4.4|^5.0|^6.0",
         "symfony/yaml": "^4.4|^5.4|^6.0"
     },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1"
+    },
+    "scripts": {
+        "phpstan": "phpstan analyse DependencyInjection Event Twig -l 1"
+    },
     "autoload": {
         "psr-4": {
             "Intaro\\TwigInjectionBundle\\": ""
